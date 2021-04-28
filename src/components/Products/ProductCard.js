@@ -14,7 +14,7 @@ import { productsContext } from "../../context/ProductsContext";
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        maxWidth: 345,
+        maxWidth: 500,
     },
     media: {
         backgroundSize: "media",
@@ -55,7 +55,7 @@ export default function ProductCard({ item }) {
                 <IconButton 
                 aria-label="share"
                 onClick = {() => addProductToCart(item)}
-                color={checkProductInCart(item.id) ? "secondary" : "primary"}
+                color={checkProductInCart(item.id) ? "primary" : "secondary"}
                 >
                     <ShoppingCartIcon />
                 </IconButton>
