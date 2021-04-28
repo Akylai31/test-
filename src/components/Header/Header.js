@@ -165,7 +165,7 @@ export default function Header() {
                     aria-label="show 11 new notifications"
                     color="inherit"
                 >
-                    <Badge badgeContent={11} color="secondary">
+                    <Badge badgeContent={11} color="danger">
                         <NotificationsIcon />
                     </Badge>
                 </IconButton>
